@@ -35,8 +35,8 @@ A part of the memory module, it simulates the register file of the MIPS-lite arc
 
 2. **Run the Simulator**: Execute the main.py script to start the simulation. You can modify the path to the trace file within main.py to point to your specific trace file.
 
-```python:main.py
-mem_image = Memory('./sample_memory_image.txt') # Modify the path as needed
+```bash
+python main.py <path to trace file>
 ```
 
 3. **View Results**: After execution, the simulator prints statistics about the execution, including the number of arithmetic, logic, control, and load/store instructions executed, as well as any changes to the memory and register state.

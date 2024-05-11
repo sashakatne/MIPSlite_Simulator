@@ -1,0 +1,117 @@
+python main.py .\trace_files\sample_memory_image.txt
+
+**********ECE586 Spring 2024 Final Project Team 6**********
+
+Simulating the MIPS-lite processor with Forwarding: False
+
+***** PC, Memory and Register state *****
+
+Program counter state:  100
+
+Changed memory state:
+Address 1400: 25
+Address 1404: 2550
+Address 1408: 1275
+
+Register State:
+R1: 1200
+R2: 1400
+R3: 100
+R4: 50
+R5: 50
+R6: 0
+R7: 25
+R8: 2550
+R9: 1275
+R10: 50
+R11: 50
+R12: 32
+
+***** Instruction Counts *****
+
+Total Instruction count:  638
+Arithmetic Instruction count:  333
+Logical Instruction count:  50
+Memory Instruction count:  103
+Control Instruction count:  152
+
+***** Timing Simulator *****
+
+Total number of clock cycles:  1095
+Number of average stalls:  1.9933774834437086
+Total stall count:  301
+Total number of hazards:  151
+
+***** Branching Information *****
+
+Total number of branches:  151
+Total number of branches taken:  76
+Total branch penalties:  152
+Average branch penalty:  2.0  cycles
+
+***** Performance of MIPS-lite *****
+
+CPI (Cycles Per Instruction):  1.7163009404388714
+IPC (Instructions Per Cycle):  0.582648401826484
+
+Simulating the MIPS-lite processor with Forwarding: True
+
+***** PC, Memory and Register state *****
+
+Program counter state:  100
+
+Changed memory state:
+Address 1400: 25
+Address 1404: 2550
+Address 1408: 1275
+
+Register State:
+R1: 1200
+R2: 1400
+R3: 100
+R4: 50
+R5: 50
+R6: 0
+R7: 25
+R8: 2550
+R9: 1275
+R10: 50
+R11: 50
+R12: 32
+
+***** Instruction Counts *****
+
+Total Instruction count:  638
+Arithmetic Instruction count:  333
+Logical Instruction count:  50
+Memory Instruction count:  103
+Control Instruction count:  152
+
+***** Timing Simulator *****
+
+Total number of clock cycles:  844
+Total stall count:  50
+Total number of hazards:  50
+
+***** Branching Information *****
+
+Total number of branches:  151
+Total number of branches taken:  76
+Total branch penalties:  152
+Average branch penalty:  2.0  cycles
+
+***** Performance of MIPS-lite *****
+
+CPI (Cycles Per Instruction):  1.322884012539185
+IPC (Instructions Per Cycle):  0.7559241706161137
+
+************************************
+
+***** Forwarding vs. Non-Forwarding Comparison *****
+
+Total clock cycle count without forwarding: 1095
+Total clock cycle count with forwarding: 844
+Speedup due to forwarding: 1.30x
+Total IPC lift (%) due to forwarding: 17.33%
+
+************************************

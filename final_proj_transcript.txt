@@ -1,0 +1,237 @@
+python .\main.py .\final_proj_trace.txt
+
+**********ECE586 Spring 2024 Final Project Team 6**********
+
+Simulating the MIPS-lite processor with Forwarding: False
+
+***** PC, Memory and Register state *****
+
+Program counter state:  112
+
+Changed memory state:
+Address 2400: 2
+Address 2404: 4
+Address 2408: 6
+Address 2412: 8
+Address 2416: 10
+Address 2420: 12
+Address 2424: 14
+Address 2428: 16
+Address 2432: 18
+Address 2436: 29
+Address 2440: 22
+Address 2444: 24
+Address 2448: 26
+Address 2452: 28
+Address 2456: 30
+Address 2460: 32
+Address 2464: 34
+Address 2468: 36
+Address 2472: 38
+Address 2476: 59
+Address 2480: 42
+Address 2484: 44
+Address 2488: 46
+Address 2492: 48
+Address 2496: 50
+Address 2500: 52
+Address 2504: 54
+Address 2508: 56
+Address 2512: 58
+Address 2516: 89
+Address 2520: 62
+Address 2524: 64
+Address 2528: 66
+Address 2532: 68
+Address 2536: 70
+Address 2540: 72
+Address 2544: 74
+Address 2548: 76
+Address 2552: 78
+Address 2556: 119
+Address 2560: 82
+Address 2564: 84
+Address 2568: 86
+Address 2572: 88
+Address 2576: 90
+Address 2580: 92
+Address 2584: 94
+Address 2588: 96
+Address 2592: 98
+Address 2596: 149
+Address 2600: 2
+Address 2604: 4
+Address 2608: 6
+Address 2612: 8
+Address 2616: 10
+Address 2620: 12
+Address 2624: 14
+Address 2628: 16
+Address 2632: 18
+Address 2636: 29
+
+Register State:
+R11: 1044
+R12: 1836
+R13: 2640
+R14: 25
+R15: -188
+R16: 213
+R17: 29
+R18: 3440
+R19: -1
+R20: -2
+R21: -1
+R22: 76
+R23: 3
+R24: -1
+R25: 3
+
+***** Instruction Counts *****
+
+Total Instruction count:  911
+Arithmetic Instruction count:  375
+Logical Instruction count:  61
+Memory Instruction count:  300
+Control Instruction count:  175
+
+***** Timing Simulator *****
+
+Total number of clock cycles:  1707
+Number of average stalls:  1.8045602605863191
+Total stall count:  554
+Total number of hazards:  307
+
+***** Branching Information *****
+
+Total number of branches:  174
+Total number of branches taken:  119
+Total branch penalties:  238
+Average branch penalty:  2.0  cycles
+
+***** Performance of MIPS-lite *****
+
+CPI (Cycles Per Instruction):  1.8737650933040615
+IPC (Instructions Per Cycle):  0.533684827182191
+
+Simulating the MIPS-lite processor with Forwarding: True
+
+***** PC, Memory and Register state *****
+
+Program counter state:  112
+
+Changed memory state:
+Address 2400: 2
+Address 2404: 4
+Address 2408: 6
+Address 2412: 8
+Address 2416: 10
+Address 2420: 12
+Address 2424: 14
+Address 2428: 16
+Address 2432: 18
+Address 2436: 29
+Address 2440: 22
+Address 2444: 24
+Address 2448: 26
+Address 2452: 28
+Address 2456: 30
+Address 2460: 32
+Address 2464: 34
+Address 2468: 36
+Address 2472: 38
+Address 2476: 59
+Address 2480: 42
+Address 2484: 44
+Address 2488: 46
+Address 2492: 48
+Address 2496: 50
+Address 2500: 52
+Address 2504: 54
+Address 2508: 56
+Address 2512: 58
+Address 2516: 89
+Address 2520: 62
+Address 2524: 64
+Address 2528: 66
+Address 2532: 68
+Address 2536: 70
+Address 2540: 72
+Address 2544: 74
+Address 2548: 76
+Address 2552: 78
+Address 2556: 119
+Address 2560: 82
+Address 2564: 84
+Address 2568: 86
+Address 2572: 88
+Address 2576: 90
+Address 2580: 92
+Address 2584: 94
+Address 2588: 96
+Address 2592: 98
+Address 2596: 149
+Address 2600: 2
+Address 2604: 4
+Address 2608: 6
+Address 2612: 8
+Address 2616: 10
+Address 2620: 12
+Address 2624: 14
+Address 2628: 16
+Address 2632: 18
+Address 2636: 29
+
+Register State:
+R11: 1044
+R12: 1836
+R13: 2640
+R14: 25
+R15: -188
+R16: 213
+R17: 29
+R18: 3440
+R19: -1
+R20: -2
+R21: -1
+R22: 76
+R23: 3
+R24: -1
+R25: 3
+
+***** Instruction Counts *****
+
+Total Instruction count:  911
+Arithmetic Instruction count:  375
+Logical Instruction count:  61
+Memory Instruction count:  300
+Control Instruction count:  175
+
+***** Timing Simulator *****
+
+Total number of clock cycles:  1213
+Total stall count:  60
+Total number of hazards:  60
+
+***** Branching Information *****
+
+Total number of branches:  174
+Total number of branches taken:  119
+Total branch penalties:  238
+Average branch penalty:  2.0  cycles
+
+***** Performance of MIPS-lite *****
+
+CPI (Cycles Per Instruction):  1.331503841931943
+IPC (Instructions Per Cycle):  0.7510305028854081
+
+************************************
+
+***** Forwarding vs. Non-Forwarding Comparison *****
+
+Total clock cycle count without forwarding: 1707
+Total clock cycle count with forwarding: 1213
+Speedup due to forwarding: 1.41x
+Total IPC lift (%) due to forwarding: 21.73%
+
+************************************
